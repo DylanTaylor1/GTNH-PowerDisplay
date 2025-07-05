@@ -1,10 +1,14 @@
 local graphics  = require('graphics')
 local config    = require('config')
+local events    = require('events')
 local component = require('component')
+local term      = require('term')
 local glasses   = component.glasses
 local lsc       = component.gt_machine
 local last      = 0
+
 glasses.removeAll()
+term.clear()
 graphics.fox()
 
 -- Configure Graphics
@@ -31,6 +35,9 @@ textPercent = graphics.text(glasses, 'X.X%', {0.5*h, y-b1-h/2-config.fontSize}, 
 textCurr = graphics.text(glasses, '', {b2+3.25*h+1, y-b1-h/2-config.fontSize}, config.fontSize/1.3, config.textColor)
 textMax = graphics.text(glasses, '', {-2.25*h+l, y-b1-h/2-config.fontSize}, config.fontSize/1.3, config.textColor)
 textMaintenance = graphics.text(glasses, '', {b2, y-b1-b2-h-3*config.fontSize}, config.fontSize, config.issueColor)
+
+-- Stand Ready for Exit Command
+events.hookEvents()
 
 -- ===== MAIN LOOP =====
 while true do
@@ -98,6 +105,14 @@ while true do
     textMaintenance.setText('')
   end
 
+  -- Terminal Condition
+  if events.needExit() then
+    break
+  end
+
   -- Pause
   os.sleep(config.sleep)
 end
+
+events.unhookEvents()
+glasses.removeAll()
