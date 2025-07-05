@@ -20,7 +20,7 @@ local function loadConfig()
     -- The % difference between rate of change levels (chevrons)
     rateThreshold = 0.003,
     -- View numbers in metric or scientic notation
-    metric = false,
+    metric = true,
 
     -- Dimensions
     height = 12,
