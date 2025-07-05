@@ -31,7 +31,7 @@ The MFU is an optional upgrade that allows the adapter to reach machines up to 1
 2) Connect the adapter, computer case, screen, and glasses terminal with OC cables. They do not need to be in the same location or orientation as in the image below. Also place the keyboard next to the screen, either in front or on top.
 3) Power everything by connecting a GregTech or AE2 cable directly to the computer case. Alternatively, use a power converter.
 4) Right-click the glasses terminal with a pair of AR glasses to link it. Equip them in a bauble slot, tinkers mask slot, or helmet slot.
-5) Sneak right-click all the components into the computer case and press the power button.
+5) Shift-click all the components into the computer case and press the power button.
 6) Follow the commands on screen install --> Y --> Y (The OpenOS floppy disk is no longer needed in the computer afterwards).
 7) Install the required scripts by copying this line of code into the computer (middle-click to paste).
 
@@ -52,7 +52,7 @@ Launch the display by entering hud. The script runs forever so restart the compu
 - Show Current EU - Shows the amount of EU stored in the LSC, in metric or scientific notation.
 - Show Rate - Shows the rate of change in EU with chevrons. Ranges from <<< to >>> depending on the speed and direction.
 - Show Max EU - Shows the maximum amount of EU stored in the LSC, in metric or scientific notation.
-- Wireless Mode - Enables wireless mode. This changes the current EU to be the amount stored in the wireless network.
+- Wireless Mode - Enables wireless mode. This changes the current EU to the amount stored in the wireless network.
 - Wireless Max - Sets the "maximum" value for the HUD to reach 100%. There is no maximum to the wireless network so this is purely visual.
 - Rate Threshold - Determines how quickly the capacity of the LSC needs to be changing to increase/decrease the amount of chevrons.
 - Metric - Determines metric or scientific notation for the current EU and maximum EU.
