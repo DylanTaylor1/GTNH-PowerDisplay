@@ -29,7 +29,7 @@ graphics.quad(glasses, {3.5*h, y-b1}, {3.5*h+l, y-b1}, {2.5*h+l, y-b1-h}, {2.5*h
 
 -- Draw Energy Bar
 energyBar = graphics.quad(glasses, {b2+3.25*h, y-b1}, {b2+3.25*h, y-b1}, {b2+2.25*h, y-b1-h}, {b2+2.25*h, y-b1-h}, config.primaryColor)
-textPercent = graphics.text(glasses, 'X.X%', {0.5*h, y-b1-h/2-config.fontSize}, config.fontSize, config.primaryColor)
+textPercent = graphics.text(glasses, 'X.X%', {0.5*h, y-b1-h/1.8-config.fontSize}, config.fontSize, config.primaryColor)
 
 -- Draw Optional Values
 textCurr = graphics.text(glasses, '', {b2+3.25*h+1, y-b1-h/2-config.fontSize}, config.fontSize/1.3, config.textColor)
@@ -62,10 +62,10 @@ while true do
 
   if percentage > 0.999 then
     textPercent.setText('100%')
-    textPercent.setPosition(b2+2.1*h-2*config.fontSize*(#textPercent.getText()), y-b1-h/2-config.fontSize)
+    textPercent.setPosition(b2+2.1*h-2*config.fontSize*(#textPercent.getText()), y-b1-h/1.8-config.fontSize)
   else
     textPercent.setText(string.format('%.1f%%', percentage*100))
-    textPercent.setPosition(b2+2*h-2*config.fontSize*(#textPercent.getText()-1), y-b1-h/2-config.fontSize)
+    textPercent.setPosition(b2+2*h-2*config.fontSize*(#textPercent.getText()-1), y-b1-h/1.8-config.fontSize)
   end
 
   -- Adjust Optional Values
