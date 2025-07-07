@@ -45,7 +45,7 @@ The MFU is an optional upgrade that allows the adapter to reach machines up to 1
 
 # Running the Program
 
-Launch the power display by entering 'hud'. The script runs indefinitely until manually terminated by the player pressing 'C' in the terminal. Restarting the computer also works. A separate computer is needed for each individual player. The available configuration options are listed below.
+Launch the power display by entering 'hud'. The script runs indefinitely until manually terminated by the player pressing 'C' in the terminal. Restarting the computer also works. Maintenance issues appear above the energy bar in red text ("Has Problems!") to help them get fixed as soon as possible. A separate computer is needed for each individual player. The available configuration options are listed below.
 - Resolution - Depends on monitor (ie. 1920x1080).
 - Fullscreen - Adds a vertical offset if playing on fullscreen mode.
 - GUI Scale - Depends on settings (ie. 3).
