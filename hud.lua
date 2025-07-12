@@ -90,10 +90,10 @@ while true do
 
     if percentage > 0.999 then
       glasses[i].textPercent.setText('100%')
-      glasses[i].textPercent.setPosition(b2+2.1*h-2*config.fontSize*(#textPercent.getText()), y-b1-h/1.8-config.fontSize)
+      glasses[i].textPercent.setPosition(b2+2.1*h-2*config.fontSize*(#glasses[i].textPercent.getText()), y-b1-h/1.8-config.fontSize)
     else
       glasses[i].textPercent.setText(string.format('%.1f%%', percentage*100))
-      glasses[i].textPercent.setPosition(b2+2*h-2*config.fontSize*(#textPercent.getText()-1), y-b1-h/1.8-config.fontSize)
+      glasses[i].textPercent.setPosition(b2+2*h-2*config.fontSize*(#glasses[i].textPercent.getText()-1), y-b1-h/1.8-config.fontSize)
     end
 
     glasses[i].textCurr.setText(curr .. ' ' .. rate)
@@ -101,10 +101,10 @@ while true do
     if config.showMaxEU then
       if config.metric then
         glasses[i].textMax.setText(graphics.metricParser(capacity))
-        glasses[i].textMax.setPosition(2.25*h+l-1.5*config.fontSize*(#textMax.getText()-1), y-b1-h/2-config.fontSize)
+        glasses[i].textMax.setPosition(2.25*h+l-1.5*config.fontSize*(#glasses[i].textMax.getText()-1), y-b1-h/2-config.fontSize)
       else
         glasses[i].textMax.setText(graphics.scientificParser(capacity))
-        glasses[i].textMax.setPosition(2.25*h+l-1.5*config.fontSize*(#textMax.getText()-1), y-b1-h/2-config.fontSize)
+        glasses[i].textMax.setPosition(2.25*h+l-1.5*config.fontSize*(#glasses[i].textMax.getText()-1), y-b1-h/2-config.fontSize)
       end
     end
 
