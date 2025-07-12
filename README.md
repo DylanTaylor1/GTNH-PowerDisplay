@@ -45,7 +45,7 @@ The MFU is an optional upgrade that allows the adapter to reach machines up to 1
 
 # Running the Program
 
-Launch the power display by entering 'hud'. The script runs indefinitely until manually terminated by the player pressing 'C' in the terminal. Restarting the computer also works. Maintenance issues appear above the energy bar in red text ("Has Problems!") to help them get fixed as soon as possible. A separate computer is needed for each individual player. The available configuration options are listed below.
+Launch the power display by entering 'hud'. The script runs indefinitely until manually terminated by the player pressing 'C' in the terminal. Restarting the computer also works. Maintenance issues appear above the energy bar in red text ("Has Problems!") to help them get fixed as soon as possible. The available configuration options are listed below. Restart the computer after changing anything in the config.
 - Resolution - Depends on monitor (ie. 1920x1080).
 - Fullscreen - Adds a vertical offset if playing on fullscreen mode.
 - GUI Scale - Depends on settings (ie. 3).
@@ -60,6 +60,7 @@ Launch the power display by entering 'hud'. The script runs indefinitely until m
 - Transparency - Change the alpha values of the shapes and the text.
 - Colors - Change the colors of the energy bar, the background, the border, and the text.
 - Sleep - Seconds between updates.
+Sharing the same computer and program between multiple players is possible. Simply connect another glasses terminal for each individual player. However, the configuration settings are going to be the same for everyone. A separate computer is needed for different configurations.
 
 ## Other Helpful Commands
 
